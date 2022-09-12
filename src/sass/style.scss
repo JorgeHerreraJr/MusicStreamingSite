@@ -52,13 +52,12 @@ ul.navbar {
 
 .homeVideo {
     position: relative;
-    width: 100%;
+    // width: 100%;
     overflow: hidden;
     padding-top: 56.25%;
-    margin-right: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
     border-style: groove;
-    flex-basis: 60%;
-
     .responsive-vid {
         overflow: hidden;
         position: absolute;
@@ -115,6 +114,10 @@ footer {
         display: flex;
         flex-direction: column;
         padding: 20px;
+        .homeVideo {
+            margin-left: 5%;
+            margin-right: 5%;
+        }
     }
 
 }
