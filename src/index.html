@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Home</title>
 </head>
 
@@ -13,10 +14,15 @@
     <header>
         <h1 class="brand">GLUe</h1>
         <ul class="navbar">
-            <li><a href="#">BROWSE</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li class="right"><a href="#">LOGIN</a></li>
-            <li class="right"><a href="#">SIGN UP</a></li>
+            <div id="myLinks">
+                <li><a href="#">BROWSE</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li class="right"><a href="#">LOGIN</a></li>
+                <li class="right"><a href="#">SIGN UP</a></li>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="mobileNav()">
+                <i class="fa fa-bars"></i>
+            </a>
         </ul>
     </header>
     <h2 class="welcome">GLU is a place where one can find a wide variety of music.
@@ -42,7 +48,17 @@
             <li><a href="#">FILLER</a></li>
         </ul>
     </footer>
-
+    <!-- <script src="/src/js/index.js"></script> -->
+    <script>
+        function mobileNav() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
 </body>
 
 </html>
