@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Home</title>
 </head>
 
@@ -40,6 +39,43 @@
                 allowfullscreen></iframe>
         </div>
     </div>
+
+    <div class="email">
+        <i class="fa fa-envelope" style=
+          "font-size: 15px; color: blue;"></i>
+        <a href="" id="email"> </a>
+      </div>
+      <div class="phone">
+        <i class="fa fa-phone" style=
+          "font-size: 15px; color: blue;"></i>
+        <a href="" id="phone"> </a>
+      </div>
+      <br />
+      <div id="user-img"></div>
+      <br />
+   
+      <div class="details">
+        <table>
+          <tr>
+            <td>Age</td>
+            <td><span id="age"></span></td>
+          </tr>
+          <tr>
+            <td>Gender</td>
+            <td><span id="gender"></span></td>
+          </tr>
+          <tr>
+            <td>Location</td>
+            <td><span id="location"></span></td>
+          </tr>
+          <tr>
+            <td>Country</td>
+            <td><span id="country"></span></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
     <footer>
         <h1>GLU</h1>
         <ul class="bottom-nav">
@@ -48,17 +84,7 @@
             <li><a href="#">FILLER</a></li>
         </ul>
     </footer>
-    <!-- <script src="/src/js/index.js"></script> -->
-    <script>
-        function mobileNav() {
-          var x = document.getElementById("myLinks");
-          if (x.style.display === "block") {
-            x.style.display = "none";
-          } else {
-            x.style.display = "block";
-          }
-        }
-        </script>
+    <script src="/src/js/index.js"></script>
 </body>
 
 </html>
