@@ -58,6 +58,7 @@ ul.navbar {
     margin-left: 20%;
     margin-right: 20%;
     border-style: groove;
+
     .responsive-vid {
         overflow: hidden;
         position: absolute;
@@ -109,10 +110,45 @@ footer {
         display: flex;
         flex-direction: column;
         padding: 20px;
+
         .homeVideo {
             margin-left: 5%;
             margin-right: 5%;
         }
     }
+
+    header {
+        text-align: center;
+        color: white;
+
+        ul.navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+
+            li {
+                float: none;
+
+                a {
+                    display: block;
+                    text-align: center;
+                    padding: 14px 14px;
+                    text-decoration: none;
+                    color: white;
+                }
+
+                a:hover {
+                    background-color: #111;
+
+                }
+            }
+
+            li.right {
+                float: none;
+            }
+        }
+    }
+
 
 }
